@@ -22,7 +22,7 @@ def remove_assignment():
 def clear_assignments():
     assignment_scores.clear()
 
-main_menu = input('Welcome to the Grade Menu. Please select an option: \n1 - Add Test \n2 - Remove Tests \n3 - Clear Tests \n4 - Add Assignment \n5 - Remove Assignment \n6 - Clear Assignments \nD - Display Scores \nQ - Quit \n==> ')
+main_menu = input('Welcome to the Grade Menu. Please select an option: \n1) - Add Test \n2) - Remove Tests \n3) - Clear Tests \n4) - Add Assignment \n5) - Remove Assignment \n6) - Clear Assignments \nD) - Display Scores \nQ) - Quit \n==> ')
 
 while main_menu != 'Q' or 'q':
     if main_menu == '1':
