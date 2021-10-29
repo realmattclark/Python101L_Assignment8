@@ -1,12 +1,14 @@
-test_scores = {}
-assignment_scores = {}
+test_scores = []
+assignment_scores = []
 
 def add_test():
     score = int(input('Add test score: \n'))
-    score.append(test_scores)
-    return test_scores
+    str(score)
+    test_scores.append(score)
+    
 
 def remove_test():
+    
     test_scores.remove[-1]
 
 def clear_test():
@@ -14,13 +16,21 @@ def clear_test():
 
 def add_assignment():
     assign_score = int(input('Enter Assignment Grade: \n'))
-    assign_score.append(assignment_scores)
+    str(assign_score)
+    assignment_scores.append(assign_score)
 
 def remove_assignment():
     assignment_scores.remove[-1]
 
 def clear_assignments():
     assignment_scores.clear()
+
+def find_mean():
+    mean = test_scores[0] + test_scores[n] / len(test_scores)
+
+    return mean
+
+
 
 main_menu = input('Welcome to the Grade Menu. Please select an option: \n1) - Add Test \n2) - Remove Tests \n3) - Clear Tests \n4) - Add Assignment \n5) - Remove Assignment \n6) - Clear Assignments \nD) - Display Scores \nQ) - Quit \n==> ')
 
@@ -46,4 +56,5 @@ while main_menu != 'Q' or 'q':
     elif main_menu == 'D' or 'd':
         print(test_scores, assignment_scores)
     else:
-        print('Have a good one')
+        print('Thanks!')
+        quit()
